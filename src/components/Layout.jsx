@@ -9,6 +9,7 @@ import {
 } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import AssignmentIcon from '@mui/icons-material/Assignment';
+import ConstructionIcon from '@mui/icons-material/Construction';
 
 function Layout() {
   const location = useLocation();
@@ -45,6 +46,21 @@ function Layout() {
             }}
           >
             RHF Form
+          </Button>
+          <Button
+            color="inherit"
+            component={RouterLink}
+            to="/maintenance"
+            startIcon={<ConstructionIcon />}
+            sx={{
+              fontWeight:
+                location.pathname === '/maintenance' ? 'bold' : 'normal',
+              textDecoration:
+                location.pathname === '/maintenance' ? 'underline' : 'none',
+              ml: 1,
+            }}
+          >
+            점검 안내
           </Button>
         </Toolbar>
       </AppBar>

@@ -31,7 +31,8 @@
     │   └── Layout.jsx
     └── pages/
         ├── HomePage.jsx
-        └── FormPage.jsx
+        ├── FormPage.jsx
+        └── MaintenancePage.jsx
 ```
 
 ## 🚀 시작하기
